@@ -39,7 +39,7 @@ class Sql_operation(object):
 		self.stu_classid = stu_classid
 		self.stu_phone = stu_phone
 		#定义SQL语句
-		sql = "insert into stu_info(stu_name,stu_gender,stu_age,stu_cid,stu_classid,stu_phone) values('%s','%s','%s','%s','%s','%s')"%(self.stu_name,self.stu_gender,self.stu_age,self.stu_cid,self.stu_classid,self.stu_phone)
+		sql = "insert into stu_info(stu_id, stu_name, stu_major, stu_class, card_num, stu_scholarship, stu_scholarship_status) values('%s','%s','%s','%s','%s','%s','%s')"%(self.stu_id, self.stu_name, self.stu_major, self.stu_class, self.card_num, self.stu_scholarship, self.stu_scholarship_status)
 		try:
 			#执行数据库操作
 			self.cursor.execute(sql)
