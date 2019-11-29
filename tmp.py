@@ -24,3 +24,5 @@ print(card_num)
 df = pd.read_excel('./data.xlsx',sheet_name='Sheet1')
 df['银行卡号'] = card_num
 pd.DataFrame(df).to_excel('data.xlsx', sheet_name='Sheet1', index=False, header=True)
+
+print('hello world')
